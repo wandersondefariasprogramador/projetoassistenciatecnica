@@ -70,14 +70,4 @@ Depois de iniciar :checkered_flag:, você precisa ter o  [Git](https://git-scm.c
 
 ## :checkered_flag: Iniciar ##
 
-```bash
-# Clonar o projeto
-$ git clone https://github.com/jguilhermesl/Consert-Notbook/commits?author=Thiagooffice
-# Acesse
-$ cd technical-assistance
-# Instalar dependências
-$ yarn or npm 
-# Rodar o projeto
-$ yarn run dev
-# O servidor será inicializado em <http://localhost:3000>
-```
+
