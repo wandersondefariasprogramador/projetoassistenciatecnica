@@ -46,18 +46,18 @@ Tecnologias e libs utilizadas no projeto:
 <table>
   <tr>
     <td align="center">
-      <a href="https://www.linkedin.com/in/jguilhermesl/">
-        <img src="./src/assets/gui.png" width="120px;" height="120px;" alt="Foto do João Guilherme no GitHub"/><br>
+      <a href="#">
+        <img src="#><br>
         <sub>
-          <b>João Guilherme</b>
+          <b>#</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://www.linkedin.com/in/thiago-leal-de-souza-programador/">
-        <img src="./src/assets/thiago.jpg" width="120px;" height="120px;" alt="Foto do Thiago Souza no GitHub"/><br>
+      <a href="#"
+        <img src="#"><br>
         <sub>
-          <b>Thiago Souza</b>
+          <b>#</b>
         </sub>
       </a>
     </td>
