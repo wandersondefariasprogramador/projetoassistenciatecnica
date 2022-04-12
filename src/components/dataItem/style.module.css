@@ -1,0 +1,37 @@
+.containerData {
+    width: 250px;
+}
+
+.datas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.datas p {
+    margin-top: -1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .containerData {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .containerData{
+        width: 100px;
+    }
+    .datas {
+        font-size: 2rem;
+    }
+
+    .datas p {
+        font-size: 1rem;
+    }
+ }

@@ -1,0 +1,37 @@
+.containerCard{
+    font-family: 'Poppins', sans-serif;
+    width: 320px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    transition: 1s;
+    background: #1B1B1B;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+    border-radius: 20px;
+}
+
+.imgToll svg {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    color: #e8541d;
+}
+
+.titleDescription {
+    margin-left: 1rem;
+    width: 90%;
+}
+
+.titleDescription h1  {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.titleDescription p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+

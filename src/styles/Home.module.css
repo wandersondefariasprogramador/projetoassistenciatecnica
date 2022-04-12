@@ -1,0 +1,894 @@
+.header{
+  top: 0;
+  background-color: #1C1C1C;
+  height:80px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
+}
+
+
+.containerHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 93%;
+}
+
+.menuHamburguer {
+  color: #fff;
+  font-size: 2rem;
+  transition: 0.5s;
+  display: none;
+}
+
+.menuHamburguer svg {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.menuHamburguer svg:hover {
+  color: #e8541d;
+}
+
+.navHamburguer{
+  position: fixed;
+  width: 100vw;
+  float: left;
+  top: 80px;
+  left: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.showHamburguer {
+  opacity:1;
+  transition: 0.8s;
+}
+
+.dontShowHamburguer {
+  opacity: 0;
+  transition: 0.8s;
+  margin-left: 100vw;
+}
+
+.navHamburguer {
+  background: #131313;
+}
+
+.navHamburguer li {
+  list-style: none;
+  text-decoration: none;
+  height: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.navHamburguer li:hover {
+  color: #e8541d;
+}
+
+.logo{
+  margin-left: 20px;
+  width: 80px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.listaHeader{
+  display: flex;
+  list-style: none;
+  
+}
+.linkitem{
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  color: #ffffff;
+  font-size: 11px;
+  margin-right: 14px;
+  color: #fff;
+  transition: all 0.8s;
+  padding-bottom: 2px;
+  font-weight: 700;
+}
+.linkitem:hover{
+  color:#e8541d ;
+}
+.linkitem::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+  font-size: 18px;
+}
+.linkitem:hover::after{
+   width: 100%;
+   background-color: #e8541d;
+}
+
+.iconeHamburguer {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.iconeHamburguer:hover{
+  color:#e8541d ;
+}
+.iconeHamburguer::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+  font-size: 18px;
+}
+.iconeHamburguer:hover::after{
+   width: 100%;
+   background-color: #e8541d;
+}
+
+.backgroundHome {
+  background: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url('../assets/homeImage.jpg') no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 65vh;
+  position: relative;
+}
+
+.flexHome{
+  width: 100vw;
+  height: 65vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+.titleHome {
+  color: #fff;
+  font-size: 1.8rem;
+  text-shadow: .1em .1em 0 #000;
+  z-index: 10;
+  margin-left: 2rem;
+}
+
+.boxCarouselMain {
+  width: 80vw;
+  height: 100%;
+  margin: 0 auto 0 auto;
+  padding-top: 1rem;
+}
+
+.ourServices{
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #131313;
+}
+.titleOurServices{
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.lineOurServices{
+  width: 40%;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.9;
+  margin: 1rem auto 2rem auto;
+}
+
+.allCards{
+  margin: 50px;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.infoServices{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.imagemMacBook2{
+  height: 481px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: float 5s infinite;
+  margin-bottom: 40px;
+}
+@keyframes float{
+	0%,100%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-30px)
+	}
+} 
+.efeito-flutuante .elementor-button-wrapper a, .efeito-flutuante .elementor-image img {
+     animation: float 6s ease-in-out infinite;
+}
+
+.containerButtonsServices{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+}
+
+.rightContainerButtonsItems{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.containerInformationRepairs {
+  display: flex;
+  justify-content: center;
+  background: #e8541d;
+  width: 100vw;
+  height: 100%!important;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.boxImgWrapper {
+  height: 100%;
+  width: 100%;
+  background: #e8541d;
+  opacity: 0.3;
+}
+
+.textInformationRepairs {
+  max-width: 90vw;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  top: 4rem;
+  margin: 0 auto;
+  
+}
+
+.textInformationRepairs h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.textInformationRepairs h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.datasInformation { 
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 95vw;
+  justify-content: center;
+}
+
+.boxSocialMedia {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.containerImagem3Mac{
+  height: 45vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placesDelivery {
+  height: 100%;
+}
+
+.boxPlacesDelivery {
+  width: 90vw;
+  height: 500px;
+  margin: 10px auto;
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+
+.cardPlace {
+  color: #fff;
+  margin-top: 3rem;
+  width: 240px;
+  height: 330px;
+  background: #1B1B1B;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+  margin-bottom: 1rem;
+  transition: all 1.1s;
+}
+.cardPlace:hover{
+  background: linear-gradient(23deg, rgba(248,132,22,1) 9%, rgba(50,61,225,0.7454024754213483) 52%, rgba(26,231,57,1) 90%);
+  margin-top: 1rem;
+  box-shadow: 0px 0px 15px #fff;
+}
+
+.cardPlace:nth-child(2) {
+  width: 280px;
+  height: 400px;
+}
+
+.lineTopCard {
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(to right, #FF7C40, #FF3835  )
+}
+
+.titleAndPrice {
+  padding-top: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.titleAndPrice h1 {
+  font-size: 1.3rem;
+}
+
+.titleAndPrice span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: #FF3835 1px solid;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 1rem auto 0 auto;
+}
+
+.listBairros {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 15px;
+  margin-top: 1rem;
+}
+
+.listBairros p {
+  display: flex;
+  align-items: center;
+}
+
+.listBairros p svg {
+  color: #FF3835;
+  font-size: 1.5rem;
+}
+
+.containerInfoServices {
+  height:300px;
+  width: 100vw;
+  background-color: #131313;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.textInfoServices {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #e8541d;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
+  width: 100vw;
+}
+
+
+.textInfoServices h1 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.textInfoServices p {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.feedBacks{
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.containerContato {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxContato {
+  display: flex;
+  height: 85%;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+  flex-wrap: wrap;
+}
+
+.formProfile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.formContatoLeft {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background: #2e2e2e;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.formContatoLeft h1 {
+  color: #fff;
+  font-weight: 700;
+
+}
+
+.boxTextsFormContatoLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 90%;
+  margin: 3rem auto;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.fotoContateNos {
+  margin-top: 1rem;
+}
+
+.boxTextsFormContatoLeft svg {
+  color: #e8541d;
+  margin-right: 5px;
+}
+
+.formContatoRight {
+  background: #F9F9F9;
+  color: #2E2E2E;
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+.field {
+    font-family: 'Poppins', sans-serif;
+    color: #2E2E2E;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #000;
+    width: 400px;
+    height: 40px;
+    font-size: 1rem;
+    padding-left: 1rem;
+    outline: none;
+}
+
+.field::placeholder {
+  color: gray;
+}
+
+.textArea {
+  outline: none;
+  display: flex;
+  font-family: 'Poppins', sans-serif; 
+  width: 400px;
+  height: 120px;
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid #000;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 4rem;
+  color: #2E2E2E;
+}
+
+.textArea::placeholder {
+  color: gray;
+}
+
+.buttonContato {
+  font-family: 'Poppins', sans-serif;
+  width: 400px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: 500;
+  background: #e8541d;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  transition: ease 0.8s;
+}
+.buttonContato:hover{
+  background-color: transparent;
+  box-shadow: 0 0 10px 0 #e8541d inset, 0 0 15px 8px #e8541d;
+  color: #e8541d;
+}
+.buttonContato:active{
+  background-color:#e8531df3 ;
+}
+
+.footer {
+  max-height: 20vh;
+  background: #2E2E2E;
+  color: #fff;
+}
+
+.topFooter {
+  padding-top: 1rem;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.topFooter ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialMediaFooter {
+  padding-top: 1rem;
+  width: 15vw;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  gap: 10px;
+}
+
+.topFooter a {
+  transition: 0.5s;
+}
+
+.socialMediaFooter a {
+  transition: 0.5s;
+}
+
+.topFooter a:hover {
+  color: #E8541D;
+}
+.socialMediaFooter a:hover {
+  color: #E8541D;
+}
+
+.iconeZap{
+  width: 55px;
+  height: 60px;
+  position: fixed;
+  right: 25px;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  z-index: 1000;
+  cursor: pointer;
+  transition: all 1s;
+  animation: animationZap 1s linear infinite;
+}
+.iconeZap:hover{
+  width: 60px;
+}
+
+.containerIframe{
+  height: 100%;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes animationZap {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .rightContainerButtonsItems {
+    width: 80%;
+  }
+
+  .textInformationRepairs h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  
+  }
+  
+  .textInformationRepairs h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+  .textInfoServices h1 {
+    font-size: 2.5rem;
+  }
+  
+  .textInfoServices p {
+    font-size: 1.5rem;
+  }
+    .textInfoServices{
+      background-image: none;
+      text-shadow: none;
+    }
+    .containerIframe{
+      margin-bottom: 0px;
+      height: 44vh;
+    }
+    .containerInfoServices{
+      height: 189px;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+  .field {
+    width: 300px;
+  }
+
+  .textArea {
+    width: 300px;
+  }
+  .buttonContato {
+    width: 300px;
+  }
+
+  .listaHeader {
+    display: none;
+  }
+
+  .menuHamburguer {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .listaHeader {
+    width: 100%;
+    margin: 0;
+  }
+  .backgroundImage{
+    justify-content: center;
+    gap:2rem;
+  }
+  .titleHome {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .boxSocialMedia {
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .containerContato { 
+    height: 100%; 
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .textInfoServices h1 {
+    font-size: 2rem;
+  }
+  
+  .textInfoServices p {
+    font-size: 1rem;
+  } 
+
+  .formProfile {
+    flex-direction: column;
+  }
+  .formContatoLeft {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .boxTextsFormContatoLeft {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 1rem;
+  }
+  .formContatoRight {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+  .boxPlacesDelivery{
+    height:1192px;
+    margin-bottom: 0px;
+  }
+  .cardPlace{
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 17px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .textInformationRepairs h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  
+  }
+  
+  .textInformationRepairs h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+
+  .titleHome {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+}
+}
+
+@media only screen and (max-width: 550px) {
+  .textInformationRepairs h1 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  
+  }
+  
+  .textInformationRepairs h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .infoServices{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .leftContainerImgCell{
+    height: 100%;
+  }
+  
+  .rightContainerButtonsItems{
+      width: 90%;
+      margin: 0 auto;
+  }
+  .containerButtonsServices{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+  }
+}
+
+@media only screen and (max-width: 450px) { 
+  .titleHome {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) { 
+
+  .footer {
+    height: 100%;
+    max-height: 100%;
+  }
+  .topFooter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .socialMediaFooter {
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
